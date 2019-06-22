@@ -11,7 +11,7 @@ function showTime(){
     hours = addZero(hours);
     minutes = addZero(minutes);
     seconds = addZero(seconds);
-    document.getElementById('clock').innerHTML = `${hours} : ${minutes} :${seconds} ${formatHours} :`
+    document.getElementById('clock').innerHTML = `${hours} : ${minutes} :${seconds} ${formatHours}`
 }
 
 function convertFormat(time){
