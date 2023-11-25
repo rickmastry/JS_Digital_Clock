@@ -1,4 +1,10 @@
-body{
+@font-face {
+    font-family: "whitrabt";
+    src: url('./fonts/whitrabt.TTF') Format('truetype');
+}
+
+
+body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -6,8 +12,48 @@ body{
     background: #000;
 }
 
-#clock{
-    font-family: 'Orbitron', sans-serif;
+
+.clock-container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#clock {
+    border: 2px solid #32cd32;
+    border-radius: 20px;
+    width: 750px;
+    font-family: "whitrabt";
     font-size: 5rem;
     color: #32cd32;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+#clock:hover {
+    color: #e23fd5;
+    transition: all 0.5s ease-in-out;
+}
+
+#clock-two {
+    border: 2px solid #32cd32;
+    border-radius: 20px;
+    width: 750px;
+    font-family: "whitrabt";
+    font-size: 5rem;
+    color: #32cd32;
+    margin: 200px;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+#clock-two:hover {
+    color: #e23fd5;
+    transition: all 0.5s ease-in-out;
 }

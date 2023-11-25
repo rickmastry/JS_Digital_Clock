@@ -1,3 +1,25 @@
+function showKenyaTime(){
+    let date = new Date();
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
+
+    let formatHours = convertFormat(hours);
+
+    hours = checkTime(hours) + 8;
+
+    hours = addZero(hours);
+    minutes = addZero(minutes);
+    seconds = addZero(seconds);
+    document.getElementById('clock-two').innerHTML = `${hours} : ${minutes} : ${seconds} ${formatHours}`
+}
+
+
+
+
+
+
+
 function showTime(){
     let date = new Date();
     let hours = date.getHours();
@@ -11,7 +33,7 @@ function showTime(){
     hours = addZero(hours);
     minutes = addZero(minutes);
     seconds = addZero(seconds);
-    document.getElementById('clock').innerHTML = `${hours} : ${minutes} :${seconds} ${formatHours}`
+    document.getElementById('clock').innerHTML = `${hours} : ${minutes} : ${seconds} ${formatHours}`
 }
 
 function convertFormat(time){
@@ -41,5 +63,8 @@ function addZero(time){
 
 }
 
+
 showTime();
 setInterval(showTime,1000)
+showKenyaTime();
+setInterval(showKenyaTime, 1000)
