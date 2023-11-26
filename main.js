@@ -1,23 +1,22 @@
 function showKenyaTime(){
     let date = new Date();
-    let hours = date.getHours();
+    let africa =  { timeZone: 'Africa/Nairobi' }
+    let kenyaTime = new Date(date.toLocaleString("en-US", africa));
+    
+
+    let hours = kenyaTime.getHours();
     let minutes = date.getMinutes();
     let seconds = date.getSeconds();
 
     let formatHours = convertFormat(hours);
 
-    hours = checkTime(hours) + 8;
+    hours = checkTime(hours);
 
     hours = addZero(hours);
     minutes = addZero(minutes);
     seconds = addZero(seconds);
     document.getElementById('clock-two').innerHTML = `${hours} : ${minutes} : ${seconds} ${formatHours}`
 }
-
-
-
-
-
 
 
 function showTime(){
@@ -63,8 +62,7 @@ function addZero(time){
 
 }
 
-
+showKenyaTime();
 showTime();
 setInterval(showTime,1000)
-showKenyaTime();
 setInterval(showKenyaTime, 1000)
