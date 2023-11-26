@@ -13,7 +13,7 @@ body {
 }
 
 .overall-container {
-
+    width: 750px;
     text-align: center;
 }
 
@@ -42,7 +42,7 @@ h1 {
 #clock {
     border: 2px solid #32cd32;
     border-radius: 20px;
-    width: 750px;
+    width: 100%;
     font-family: "whitrabt";
     font-size: 5rem;
     color: #32cd32;
@@ -61,7 +61,7 @@ h1 {
 #clock-two {
     border: 2px solid #32cd32;
     border-radius: 20px;
-    width: 750px;
+    width: 100%;
     font-family: "whitrabt";
     font-size: 5rem;
     color: #32cd32;
@@ -79,4 +79,49 @@ h1 {
 
 .space {
     margin: 100px;
+}
+
+@media only screen and (max-width: 768px) and (orientation : portrait) {
+
+    .overall-container {
+        width: 350px;
+    }
+
+    #clock {
+        width: 90%;
+        font-size: 1.75rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    #clock-two {
+        width: 90%;
+        font-size: 1.75rem;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}
+
+@media only screen and (max-width: 900px) and (orientation : landscape) {
+    .overall-container {
+        width: 550px;
+    }
+
+    #clock {
+        width: 90%;
+        font-size: 1.75rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    #clock-two {
+        width: 90%;
+        font-size: 1.75rem;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
 }
