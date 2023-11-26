@@ -12,13 +12,31 @@ body {
     background: #000;
 }
 
+.overall-container {
 
-.clock-container {
+    text-align: center;
+}
 
+.clock-container-one {
     display: flex;
     flex-direction: column;
+    text-align: center;
     justify-content: center;
-    margin-top: 100px;
+
+}
+
+.clock-container-two {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+}
+
+h1 {
+    font-size: 20px;
+    color: white;
+    text-align: center;
 }
 
 #clock {
@@ -47,7 +65,8 @@ body {
     font-family: "whitrabt";
     font-size: 5rem;
     color: #32cd32;
-    margin: 200px;
+    margin-left: 200px;
+    margin-right: 200px;
     text-align: center;
     padding: 10px;
     transition: all 0.3s ease-in-out;
@@ -56,4 +75,8 @@ body {
 #clock-two:hover {
     color: #e23fd5;
     transition: all 0.5s ease-in-out;
+}
+
+.space {
+    margin: 100px;
 }
