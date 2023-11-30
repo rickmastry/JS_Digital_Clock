@@ -52,7 +52,7 @@ h1 {
 }
 
 #clock:hover {
-    color: #e23fd5;
+    background: linear-gradient(90deg, rgba(241, 6, 6, 1) 0%, rgba(241, 26, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
     transition: all 0.5s ease-in-out;
 }
 
@@ -68,7 +68,7 @@ h1 {
 }
 
 #clock-two:hover {
-    color: #e23fd5;
+    background: linear-gradient(90deg, rgba(241, 6, 6, 1) 0%, rgba(241, 26, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
     transition: all 0.5s ease-in-out;
 }
 
