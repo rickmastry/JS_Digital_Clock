@@ -21,7 +21,9 @@ function showKenyaTime(){
 
 function showTime(){
     let date = new Date();
-    let hours = date.getHours();
+    let america =  { timeZone: 'America/New_York' }
+    let americaTime = new Date(date.toLocaleString("en-US", america));
+    let hours = americaTime.getHours();
     let minutes = date.getMinutes();
     let seconds = date.getSeconds();
 
